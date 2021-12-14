@@ -1,0 +1,5 @@
+# secret header file
+testCode/mqttTest/arduino_secrets.h
+testCode/timeDisplayTest/arduino_secrets.h
+testCode/wifiTest/arduino_secrets.h
+integrateCode/arduino_secrets.h
