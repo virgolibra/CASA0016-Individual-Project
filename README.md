@@ -175,10 +175,10 @@ To MQTT Topic ```student/CASA0016/project/ucfnmz0```
 | -------- | ------- |
 | DIN      | 6       |
 
-| TM1637 | Arduino |
-| ------ | ------- |
-| CLK    | 12      |
-| DIO    | 13      |
+| TM1637 4-digits Display | Arduino |
+| ----------------------- | ------- |
+| CLK                     | 12      |
+| DIO                     | 13      |
 
 | Buzzer | Arduino |
 | ------ | ------- |
@@ -188,9 +188,9 @@ To MQTT Topic ```student/CASA0016/project/ucfnmz0```
 | ----- | ------- |
 | S     | 3       |
 
-| TS-YM-115 | Arduino |
-| --------- | ------- |
-| OUT       | 7       |
+| TS-YM-115 Sound Sensor | Arduino |
+| ---------------------- | ------- |
+| OUT                    | 7       |
 
 | MQ-135 | Arduino |
 | ------ | ------- |
@@ -209,6 +209,20 @@ To MQTT Topic ```student/CASA0016/project/ucfnmz0```
 | ------------ | -------- |
 | **Button 1** | D14 (A0) |
 | **Button 2** | D16 (A2) |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
