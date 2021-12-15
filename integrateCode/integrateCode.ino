@@ -41,8 +41,8 @@ Dec 2021
 #define DHTTYPE DHT11 // DHT11 or DHT22, depends on your sensor
 #define seaLevelPressure_hPa 1013.25
 #define NUMPIXELS 8
-#define pixelBrightness 2
-#define tmBrightness 0
+#define pixelBrightness 10
+#define tmBrightness 2
 
 // ------------------ Wi-Fi and MQTT connection ----------------------------------------------------
 char ssid[] = SECRET_SSID;        // your network SSID
