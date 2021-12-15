@@ -106,47 +106,47 @@ To MQTT Topic ```student/CASA0016/project/ucfnmz0```
 
 + **Controller:** UNO WiFi Rev 2
 
-  <img src="img/arduinoWifiBoard.jpg" width=30% height=30%>
+  <img src="img/arduinoWifiBoard.jpg" width=10% height=10%>
   
 + **Outputs**
 
   + LCD 1602 Module
   
-  <img src="img/lcd1602.png" width=30% height=30%>
+  <img src="img/lcd1602.png"width=10% height=10%>
   
   + NeoPixel Stick
   
-  <img src="img/neoPixel.jpg" width=30% height=30%>
+  <img src="img/neoPixel.jpg"width=10% height=10%>
   
   + TM1637 4-digits display
   
-  <img src="img/segmentDisplay.jpg" width=30% height=30%>
+  <img src="img/segmentDisplay.jpg" width=10% height=10%>
   
   + Low level trigger buzzer
   
-  <img src="img/lowLevelBuzzer.jpg" width=30% height=30%>
+  <img src="img/lowLevelBuzzer.jpg" width=10% height=10%>
 
 + **Inputs**
 
   + DHT11 Temperature and humidity sensor
 
-  <img src="img/dhtSensor.jpg" width=20% height=20%>
+  <img src="img/dhtSensor.jpg" width=10% height=10%>
 
   + SENS 43 analog UV sensor
 
-   <img src="img/uvSensor.jpg" width=30% height=30%>
+   <img src="img/uvSensor.jpg" width=10% height=10%>
 
   + BMP180 Barometric pressure sensor
 
-  <img src="img/bmp180Sensor.jpg" width=30% height=30%>
+  <img src="img/bmp180Sensor.jpg" width=10% height=10%>
 
   + MQ-135 Air quality sensor
 
-  <img src="img/mqSensor.jpg" width=30% height=30%>
+  <img src="img/mqSensor.jpg" width=10% height=10%>
 
   + TS-YM-115 Sound Sensor
 
-  <img src="img/soundSensor.jpg" width=30% height=30%>
+  <img src="img/soundSensor.jpg" width=10% height=10%>
 
   
 
