@@ -279,33 +279,31 @@ in the ```testCode``` folder: https://github.com/virgolibra/CASA0016-Individual-
 
 During setup
 
-<img src="img/lcdWifiConnected.jpg" width=30% height=30%>
-<img src="img/lcdMqttConnected.jpg" width=30% height=30%>
-<img src="img/lcdSetup.jpg" width=30% height=30%>
-<img src="img/lcdSetupDone.jpg" width=30% height=30%>
-<img src="img/lcdMqttDone.jpg" width=30% height=30%>
+<img src="img/lcdWifiConnected.jpg" width=50% height=50%>
+<img src="img/lcdMqttConnected.jpg" width=50% height=50%>
+<img src="img/lcdSetup.jpg" width=50% height=50%>
+<img src="img/lcdSetupDone.jpg" width=50% height=50%>
+<img src="img/lcdMqttDone.jpg" width=50% height=50%>
 
 
 
 > Measured Data
 
-<img src="img/lcdInfo1.jpg" width=30% height=30%>
-<img src="img/lcdInfo2.jpg" width=30% height=30%>
-<img src="img/lcdInfo3.jpg" width=30% height=30%>
-<img src="img/lcdInfo4.jpg" width=30% height=30%>
-<img src="img/lcdInfo5.jpg" width=30% height=30%>
-<img src="img/lcdInfo6.jpg" width=30% height=30%>
-<img src="img/lcdInfo7.jpg" width=30% height=30%>
+<img src="img/lcdInfo1.jpg" width=50% height=50%>
+<img src="img/lcdInfo2.jpg" width=50% height=50%>
+<img src="img/lcdInfo3.jpg" width=50% height=50%>
+<img src="img/lcdInfo4.jpg" width=50% height=50%>
+<img src="img/lcdInfo5.jpg" width=50% height=50%>
+<img src="img/lcdInfo6.jpg" width=50% height=50%>
+<img src="img/lcdInfo7.jpg" width=50% height=50%>
 
 
 
 > High Volume Detected
 
-<img src="img/lcdHighVolume.jpg" width=30% height=30%>
+<img src="img/lcdHighVolume.jpg" width=50% height=50%>
 
-> Sending MQTT
 
-<img src="img/mqttSending.gif" width=30% height=30%>
 
 #### External Interrupt
 
