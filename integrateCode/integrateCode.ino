@@ -317,9 +317,9 @@ void getMqData(){
 
 void getSoundData(){
   soundDetectorStatus = !digitalRead(soundPin);
-  Serial.print(">>> Sound Detector Update | ");
-  Serial.print("Status: ");
-  Serial.println(soundDetectorStatus);
+//  Serial.print(">>> Sound Detector Update | ");
+//  Serial.print("Status: ");
+//  Serial.println(soundDetectorStatus);
 
   if (soundDetectorStatus){
     soundDetectPixelDisplay();

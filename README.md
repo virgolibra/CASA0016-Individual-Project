@@ -5,6 +5,155 @@ This is repo for casa0016 individual project
 
 
 
+------------------
+
+
+
+
+
+
+
+
+
+
+
+# CASA0016 - Individual Coursework
+
+> **DIY Environmental Monitoring Station**
+>
+> Minghao Dec 2021
+
+
+
+The Environmental monitoring system is designed to gather data locally and for indoor use.
+
+***Electronic Desk Clock with environmental parameter monitor***
+
+
+
+### GitHub repo
+
+https://github.com/virgolibra/CASA0016-Individual-Project
+
+
+
+### Prototype
+
+Built on a stripboard, with solid wires and headers.
+
+<img src="img/solderingEssentials.jpg" width=80% height=80%>
+
+
+##### Front
+
+<img src="img/frontSide.jpg" width=80% height=80%>
+
+##### Back
+
+<img src="img/backSide.jpg" width=80% height=80%>
+
+
+
+##### 3D-Printing Case
+
+Designed a 3D-Printing Case model
+
+<img src="img/3dCase.jpg" width=80% height=80%>
+
+
+
+### Deliverables
+
++ Sensor data measurements
+  + Temperature
+  + Humidity
+  + Atmospheric pressure
+  + Estimated Altitude
+  + Air Quality in ppm (Parts Per Million)
+  + UV (Ultraviolet) index
+  + Sound detection (e.g. High volume)
++ Wi-Fi and MQTT server connection
++ Data collection and visualisation based on Raspberry pi, telegraf and Grafana platform.
++ Accurate local time display (GB Zone)
++ Prompt text and sensing data display on LCD 1602 module
++ A NeoPixel Stick used as the indicator lights
++ Two press buttons added as the user interaction (Change the display and set silent mode on and off)
++ A Buzzer used as the feedback from the button pressed and the successful MQTT data uploading.
+
+
+
+### Data Collection and Visualisation
+
+##### Serial Monitor
+
+<img src="img/sensingDataSerialMonitor.jpg" width=80% height=80%>
+
+
+
+##### Serial Monitor
+
+To MQTT Topic ```student/CASA0016/project/ucfnmz0```
+
+<img src="img/sensingDataMqtt.jpg" width=30% height=30%>
+
+##### Grafana
+
+<img src="img/sensingDataGrafana.jpg" width=120% height=120%>
+
+
+
+### Components
+
++ **Controller:** UNO WiFi Rev 2
+
+  <img src="img/arduinoWifiBoard.jpg" width=30% height=30%>
+  
++ **Outputs**
+
+  + LCD 1602 Module
+  
+  <img src="img/lcd1602.png" width=30% height=30%>
+  
+  + NeoPixel Stick
+  
+  <img src="img/neoPixel.jpg" width=30% height=30%>
+  
+  + TM1637 4-digits display
+  
+  <img src="img/segmentDisplay.jpg" width=30% height=30%>
+  
+  + Low level trigger buzzer
+  
+  <img src="img/lowLevelBuzzer.jpg" width=30% height=30%>
+
++ **Inputs**
+
+  + DHT11 Temperature and humidity sensor
+
+  <img src="img/dhtSensor.jpg" width=20% height=20%>
+
+  + SENS 43 analog UV sensor
+
+   <img src="img/uvSensor.jpg" width=30% height=30%>
+
+  + BMP180 Barometric pressure sensor
+
+  <img src="img/bmp180Sensor.jpg" width=30% height=30%>
+
+  + MQ-135 Air quality sensor
+
+  <img src="img/mqSensor.jpg" width=30% height=30%>
+
+  + TS-YM-115 Sound Sensor
+
+  <img src="img/soundSensor.jpg" width=30% height=30%>
+
+  
+
+
+
+
+
 #### BMP 180 Module
 
 > Temperature, Pressure and Altitude
