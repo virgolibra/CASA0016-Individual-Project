@@ -303,8 +303,9 @@ During setup
 
 <img src="img/lcdHighVolume.jpg" width=30% height=30%>
 
+> Sending MQTT
 
-
+<img src="img/mqttSending.gif" width=30% height=30%>
 
 #### External Interrupt
 
