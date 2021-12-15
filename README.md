@@ -212,12 +212,111 @@ To MQTT Topic ```student/CASA0016/project/ucfnmz0```
 
 
 
+### Arduino Sketch
+
+##### Test Code
+
+in the ```testCode``` folder: https://github.com/virgolibra/CASA0016-Individual-Project/tree/main/testCode
+
++ ```bmpTest.ino``` Test BMP180 Sensor to obtain pressure and altitude
++ ```buttonTest.ino``` Test the button function
++ ```buzzerTest.ino``` Test buzzer beep
++ ```lcdTest.ino``` Test LCD 1602 module display and character scroll
++ ```mq135DhtTest.ino``` Test MQ135 air quality sensor
++ ```mqttTest.ino``` Test MQTT server connection, publishing and subscribing data
++ ```timeDisplay.ino``` Test local time display on TM1637 4-digits display module with [ezTime](https://github.com/ropg/ezTime) library in real time
++ ```tm1637Test.ino``` Test TM1637 4-digits display module
++ ```wifiTest.ino``` Test basic Wi-Fi connection
+
+##### Integrated Code
+
+```integrateCode.ino``` for the project
+
+**Basic Procedure**
+
++ Define pin number and variables.
+
++ Include libraries
+
++ Setup()
+
+  + LCD initialisation
+  + neoPixel initialisation
+  + Wi-Fi & MQTT connection
+  + TM1637 4-digits Display initialisation
+  + [ezTime](https://github.com/ropg/ezTime) library init
+  + Sensor init
+  + External interrupts [attachInterrupt()](https://www.arduino.cc/reference/en/language/functions/external-interrupts/attachinterrupt/) and Interrupt Service Routines (ISR) configuration
+
++ loop()
+
+  + ```mqttClient.poll(); // Keep MQTT connection```
+
+  + Get sensor values and send data to MQTT per minute
+
+    ```c
+    if (minuteChanged()) {
+        displayTime();
+        getBmpData();
+        getDhtData();
+        getMqData();  
+        getUvData();
+        sendMQTT();
+    
+        updateNTP(); // sync Local Time
+      }
+    ```
+
+    
 
 
 
+### Features
+
+#### LCD and neoPixel
+
+> Prompt Text
+
+During setup
+
+<img src="img/lcdWifiConnected.jpg" width=30% height=30%>
+<img src="img/lcdMqttConnected.jpg" width=30% height=30%>
+<img src="img/lcdSetup.jpg" width=30% height=30%>
+<img src="img/lcdSetupDone.jpg" width=30% height=30%>
+<img src="img/lcdMqttDone.jpg" width=30% height=30%>
 
 
 
+> Measured Data
+
+<img src="img/lcdInfo1.jpg" width=30% height=30%>
+<img src="img/lcdInfo2.jpg" width=30% height=30%>
+<img src="img/lcdInfo3.jpg" width=30% height=30%>
+<img src="img/lcdInfo4.jpg" width=30% height=30%>
+<img src="img/lcdInfo5.jpg" width=30% height=30%>
+<img src="img/lcdInfo6.jpg" width=30% height=30%>
+<img src="img/lcdInfo7.jpg" width=30% height=30%>
+
+
+
+#### External Interrupt
+
+|              | Arduino  |
+| ------------ | -------- |
+| **Button 1** | D14 (A0) |
+| **Button 2** | D16 (A2) |
+
+```c
+  attachInterrupt(digitalPinToInterrupt(btn1Pin), btn1_ISR, RISING);
+  attachInterrupt(digitalPinToInterrupt(btn2Pin), btn2_ISR, RISING);
+```
+
+External interrupts [attachInterrupt()](https://www.arduino.cc/reference/en/language/functions/external-interrupts/attachinterrupt/) and Interrupt Service Routines (ISR) configuration
+
++ A Listener, once the relevant button pin is rising (LOW to HIGH).
++ Temporarily break the loop and jump into ISR
++ Execute the codes in ISR function
++ Then back to loop
 
 
 
