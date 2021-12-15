@@ -41,7 +41,7 @@ Dec 2021
 #define DHTTYPE DHT11 // DHT11 or DHT22, depends on your sensor
 #define seaLevelPressure_hPa 1013.25
 #define NUMPIXELS 8
-#define pixelBrightness 10
+#define pixelBrightness 5
 #define tmBrightness 2
 
 // ------------------ Wi-Fi and MQTT connection ----------------------------------------------------

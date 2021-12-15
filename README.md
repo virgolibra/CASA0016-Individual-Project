@@ -69,7 +69,7 @@ Designed a 3D-Printing Case model
   + Humidity
   + Atmospheric pressure
   + Estimated Altitude
-  + Air Quality in ppm (Parts Per Million)
+  + Gas Concentration in ppm (Parts Per Million)
   + UV (Ultraviolet) index
   + Sound detection (e.g. High volume)
 + Wi-Fi and MQTT server connection
@@ -140,7 +140,7 @@ To MQTT Topic ```student/CASA0016/project/ucfnmz0```
 
   <img src="img/bmp180Sensor.jpg" width=10% height=10%>
 
-  + MQ-135 Air quality sensor
+  + MQ-135 Gas concentration sensor
 
   <img src="img/mqSensor.jpg" width=10% height=10%>
 
@@ -299,6 +299,13 @@ During setup
 
 
 
+> High Volume Detected
+
+<img src="img/lcdHighVolume.jpg" width=30% height=30%>
+
+
+
+
 #### External Interrupt
 
 |              | Arduino  |
@@ -313,10 +320,42 @@ During setup
 
 External interrupts [attachInterrupt()](https://www.arduino.cc/reference/en/language/functions/external-interrupts/attachinterrupt/) and Interrupt Service Routines (ISR) configuration
 
+RISING to trigger when the pin goes from low to high
+
+
+
 + A Listener, once the relevant button pin is rising (LOW to HIGH).
-+ Temporarily break the loop and jump into ISR
-+ Execute the codes in ISR function
++ Temporarily breaks the loop and executes codes in ISR function
 + Then back to loop
+
+
+
+
+
+### Reflection & Improvement
+
+
+
++ Night mode - add buttons / Coding to turn off LCD backlight, LED and Time display (Manual/Auto)
++ UV sensor output 0-1V. Arduino analog input 0-5 V.
++ MQ135 Gas Concentration sensor. Output in ppm.
++ DHT 11 sensor is placed next to MQ135 sensor, which has a built-in heating component and could affect the temperature reading.
+
+
+
+
+
+
+
+
+
+
+
+--------------
+
+
+
+
 
 
 
@@ -399,4 +438,11 @@ https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/
 [GitHub - Phoenix1747/MQ135: 📚🌀 Arduino library for the MQ135 air quality sensor. Allows for temperature and humidity corrected readings.](https://github.com/Phoenix1747/MQ135)
 
 https://www.kane.co.uk/knowledge-centre/what-are-safe-levels-of-co-and-co2-in-rooms
+
+
+
+##### UV
+
+<img src="img/uvIndex.jpg" width=50% height=50%>
+<img src="img/uvVoltageLevel.jpg" width=50% height=50%>
 
