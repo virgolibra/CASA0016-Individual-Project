@@ -77,7 +77,7 @@ Designed a 3D-Printing Case model
 + Accurate local time display (GB Zone)
 + Prompt text and sensing data display on LCD 1602 module
 + A NeoPixel Stick used as the indicator lights
-+ Two press buttons added as the user interaction (Change the display and set silent mode on and off)
++ Two push buttons added as the user interaction (Change the display and set silent mode on and off)
 + A Buzzer used as the feedback from the button pressed and the successful MQTT data uploading.
 
 
@@ -148,9 +148,67 @@ To MQTT Topic ```student/CASA0016/project/ucfnmz0```
 
   <img src="img/soundSensor.jpg" width=10% height=10%>
 
-  
+  + Push buttons
+
+  <img src="img/pushButton.jpg" width=10% height=10%>
 
 
+
+### Pin Connection
+
+##### Arduino Wifi Board Pinout
+
+<img src="img/arduinoWifiPinout.png" width=60% height=60%>
+
+##### Components Connection
+
+| LCD 1602 | Arduino |
+| -------- | ------- |
+| RS       | 2       |
+| EN       | 4       |
+| D4       | 8       |
+| D5       | 9       |
+| D6       | 10      |
+| D7       | 11      |
+
+| NeoPixel | Arduino |
+| -------- | ------- |
+| DIN      | 6       |
+
+| TM1637 | Arduino |
+| ------ | ------- |
+| CLK    | 12      |
+| DIO    | 13      |
+
+| Buzzer | Arduino |
+| ------ | ------- |
+| I/O    | 5       |
+
+| DHT11 | Arduino |
+| ----- | ------- |
+| S     | 3       |
+
+| TS-YM-115 | Arduino |
+| --------- | ------- |
+| OUT       | 7       |
+
+| MQ-135 | Arduino |
+| ------ | ------- |
+| AO     | A1      |
+
+| BMP180 | Arduino   |
+| ------ | --------- |
+| SCL    | SCL (D19) |
+| SDA    | SDA (D18) |
+
+| UV Sensor | Arduino |
+| --------- | ------- |
+| OUT       | A3      |
+
+|              | Arduino  |
+| ------------ | -------- |
+| **Button 1** | D14 (A0) |
+| **Button 2** | D16 (A2) |
 
 
 

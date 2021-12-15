@@ -34,7 +34,7 @@ Dec 2021
 #define soundPin 7
 #define uvPin A3
 #define pixelPin 6
-#define btn1Pin 14  // A1
+#define btn1Pin 14  // A0
 #define btn2Pin 16  // A2
 
 
