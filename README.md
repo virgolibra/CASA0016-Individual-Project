@@ -106,17 +106,17 @@ To MQTT Topic ```student/CASA0016/project/ucfnmz0```
 
 + **Controller:** UNO WiFi Rev 2
 
-  <img src="img/arduinoWifiBoard.jpg" width=10% height=10%>
+  <img src="img/arduinoWifiBoard.jpg" width=30% height=30%>
   
 + **Outputs**
 
   + LCD 1602 Module
   
-  <img src="img/lcd1602.png"width=10% height=10%>
+  <img src="img/lcd1602.png" width=30% height=30%>
   
   + NeoPixel Stick
   
-  <img src="img/neoPixel.jpg"width=10% height=10%>
+  <img src="img/neoPixel.jpg" width=30% height=30%>
   
   + TM1637 4-digits display
   
